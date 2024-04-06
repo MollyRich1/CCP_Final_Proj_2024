@@ -1,0 +1,424 @@
+:root {
+    --color-base: #eed3c7;
+    --color-slate: #232323;
+    --color-light: #dddbd7;
+    --size-300: 0.8rem;
+    --size-400: 1rem;
+    --size-500: 1.25rem;
+    --size-600: 1.56rem;
+    --size-700: 1.95rem;
+    --size-800: 2.44rem;
+    --size-900: 3.05rem;
+    --size-max: 4rem;
+    --size-contain: 60rem;
+    --font-base: Georgia, serif;
+    /* --font-lobster: "Lobster", cursive; */
+  }
+
+  body {
+    font-family: var(--font-base);
+    background: var(--color-base);
+    color: var(--color-slate);
+    line-height: 1.5;
+    padding: var(--size-700) var(--size-500);
+  }  
+
+  h1 {
+    font-family: var(--font-lobster);
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-family: var(--font-lobster);
+    font-size: var(--size-900);
+  }
+  
+  h2:first-child {
+    padding-top: var(--size-900);
+  }
+  
+  h1 + h2 {
+    --flow-space: var(--size-300);
+  
+    font-weight: bold;
+    font-style: italic;
+    font-size: var(--size-600);
+    font-family: var(--font-base);
+    max-width: 30ch;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  h3{
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  
+  p,
+  li {
+    max-width: 65ch;
+  }
+
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+  }
+  
+  
+  ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid transparent; 
+  }
+  
+  ul.nav li a:hover {
+    background-color: #111;
+    border-width: 2px;
+    border-color: antiquewhite;
+    border-style: dotted;
+  }
+
+  ul.nav li a.active {
+    background-color: #dc6291;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline; */
+    border-color: antiquewhite;
+  }
+
+
+  .hide_this {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .hide_this:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 3px;
+  }
+
+
+div.bacon-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 0px;
+    /* grid-auto-rows: 246px; */
+
+}
+
+.bacon-photos img{
+  justify-content: center;
+  margin: 8px;
+  overflow: hidden;
+}
+
+.zucchini_images{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.zucchini_images img{
+  margin: 5px;
+}
+
+.make_small{
+  width: 350px;
+  justify-content: center;
+}
+
+.make_small2{
+  width: 350px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.make_small3 img{
+  width: 180px;
+}
+
+.main_pic{
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.travel_pic{
+  display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.travel_pic img {
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+  display: block;
+  margin: 5px;
+}
+
+video{
+  border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 3px;
+    width: 180px;
+    margin: 8px;
+    overflow: hidden;
+    
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gif{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  
+  div.bacon-photos {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    /* grid-auto-rows: 246px; */
+}
+
+.bacon_text_flex{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.main_pic{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  float: left; 
+  margin: 0 20px 20px 0; 
+}
+
+img {
+  border-radius: 10px;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zucchini_images img {
+  width: 270px;
+  margin: 10px;
+}
+
+.swed_pancake img{
+  height: 400px;
+}
+
+.peddie_imgs img{
+  height: 200px;
+  width: 255px;
+}
+.cody_imgs img{
+  height: 300px;
+  width: 255px;
+}
+
+.zucchini_images, .swed_pancake{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+/* slideshow stuff */
+.slideshow {
+  overflow: hidden;
+  width: 300px; 
+  height: 200px; 
+  position: relative;
+} 
+
+
+.pause-play-btn {
+  position: relative;
+  bottom: 0px; 
+  /* left: 50%; */
+  transform: translateX(-50%); 
+  z-index: 1; 
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+
+
+.slide-track {
+  display: flex;
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%); /*Adjust this value based on the number of images ???? HOW WHY WHAT*/
+  }
+} 
+
+/* modeal image stuff 1*/
+#Monteverde_main {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Monteverde_main:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.travel_pic{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+/* #m-left{
+  display: inline-block;
+  right: 100px;
+} */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .gif{
+    display: none;
+  }
+  .modal {
+    display: none !important;
+  }
+
+  slide-track {
+    animation: none !important;
+  }
+}
+}
