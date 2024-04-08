@@ -13,18 +13,18 @@
         <a class = "hide_this" href = "#main">Skip to Main Content</a>
         <nav>
             <ul class="nav">
-                <li><a href = "index.html">Home</a></li>
+                <li><a class = "home" href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
                 <li><a href = "recipes.html">Recipes</a></li>
                 <li><a class = "active" href = "travel.html">Travel</a></li>
             </ul>
         </nav>
-            <h1>Travel</h1>
+            <h1 class="travel_head">Travel</h1>
         </header>
-    <main id = "main">
+    <main id = "main" class="travel_main">
         <div>
-            <h2>Location: Monteverde, Costa Rica</h2>
-             <img id="Monteverde_main" class= "make_small main_pic" src = "images/Monteverde_hanging_bridges.jpeg" width="200" alt = "A bridge hanging above the cloud forest canopy in Monteverde.">
+            <h2 class="t_h2">Location: Monteverde, Costa Rica</h2>
+             <img id="Monteverde_main" class= "make_small main_pic main_pt" src = "images/Monteverde_hanging_bridges.jpeg" width="200" alt = "A bridge hanging above the cloud forest canopy in Monteverde.">
              <div id="myModal" class="modal">
 
                 <!-- The Close Button -->
@@ -37,30 +37,50 @@
                 <div id="caption"></div>
               </div>
             
-             <h3>Geographical Location: South America</h3><br>
+             <h3 class="t_h2">Geographical Location: South America</h3><br>
             <p>Monteverde, Costa Rica is situated 4,662 feet above sea level. Monteverde’s famed cloud forests are the byproduct of fog (a thick, low-hanging cloud) tangling amongst the leaves and branches of the forest canopy. Trails and hanging bridges offer a close-up view of the diverse variety of animals and plants living in the forest.</p><br>
-            <p>One of the main tourist locations in Monteverde is the town of Santa Elena, which is not only home to a variety of restaurants with delicious food, but a serpentarium as well. You can enjoy hiking, ziplining, and observing the native wildlife while staying in Monteverde. It’s a truly beautiful place.</p><br>
-            <h3>Photo Gallery</h3>
-            <div class="travel_pic" class = "slideshow">
-                <div class="slide-track">
-            <img src="images/Monteverde_cloud_forest.jpeg" width ="200" alt = "Clouds rolling through a line of trees.">
-            <img src="images/Monteverde_el_tigre_waterfalls.jpeg" width ="200" alt = "A person in red standing in front of one of El Tigre’s four waterfalls.">
-           </div>
-           <button class="pause-play-btn">Pause</button>
+            <p>One of the main tourist locations in Monteverde is the town of Santa Elena, which is not only home to a variety of restaurants with delicious food, but a serpentarium as well. You can enjoy hiking, ziplining, and observing the native wildlife while staying in Monteverde. It's a truly beautiful place.</p><br>
+            <h3 class="t_h2">Photo Gallery</h3>
+            <div class="slideshow-container">
+            <!-- <div class="travel_pic" class = "slideshow"> -->
+                <!-- <div class="slide-track"> -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+            <img src="images/Monteverde_cloud_forest.jpeg" style="width:80%" style="height:65%" alt = "Clouds rolling through a line of trees.">
+            <div class="text">Clouds rolling through a line of trees.</div>
         </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="images/Monteverde_el_tigre_waterfalls.jpeg" style="width:80%" style="height:65%" alt = "A person in red standing in front of one of El Tigre's four waterfalls.">
+            <div class="text">El Tigre's four waterfalls</div>
+        </div>
+           </div>
+           <!-- <button class="pause-play-btn">Pause</button> -->
+           <!-- might be in wrong spot -->
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>         
+        </div>
+    <!-- </div> -->
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
         </div>
 
         <div>
-            <h2>Location: Chiangmai, Thailand</h2>
-            <img class = "make_small main_pic gif" src="images/chiangmaigif.gif" width ="200" alt = "gif of launterns in chiangmai">
-            <h3>Geographical Location: Asia</h3><br>
+            <h2 class="t_h2">Location: Chiangmai, Thailand</h2>
+            <img class = "make_small main_pic gif main_pt" src="images/chiangmaigif.gif" width ="200" alt = "gif of launterns in chiangmai">
+            <h3 class="t_h2">Geographical Location: Asia</h3><br>
        
         
             <p>Chiang Mai, nestled in the lush hills of northern Thailand, is a city that captivates with its unique blend of cultural richness and natural beauty. Situated approximately 700 kilometers north of Bangkok, Chiang Mai is the largest city in the region and serves as the capital of the province of the same name. Its geographical location is nothing short of enchanting, surrounded by forested mountains and picturesque landscapes. This charming city, often referred to as the "Rose of the North," offers visitors a delightful escape from the bustling urban life, inviting them to explore a realm where tradition meets modernity amidst a backdrop of stunning scenery.</p><br>
 
             <p>The heart of Chiang Mai beats with a rich history that dates back over 700 years. Founded in 1296, the city was originally the capital of the ancient Lanna Kingdom. Today, remnants of its storied past are scattered throughout the city, from the ancient temples that dot the landscape to the preserved city walls and moats that harken back to a bygone era. Among the city's treasures is the revered Wat Phra Singh, a 14th-century temple known for its intricate architecture and revered Buddha image. Chiang Mai's historical sites provide a captivating glimpse into its heritage, making it a destination that seamlessly weaves together the past and present for visitors to explore and appreciate.</p><br>
 
-            <h3>Photo Gallery</h3>
+            <h3 class="t_h2">Photo Gallery</h3>
             <div class="travel_pic">
             <img src="images/chiangmai.jpeg" width ="200" alt = "Cityscape of chiang Mai">
             <img src="images/chiangmai2.jpeg" width ="200" alt = "several elephants and smiley volunteers in the forest">
@@ -69,11 +89,11 @@
         </div>
 
         <div>
-            <h2>Location: London</h2>
-            <img class= "make_small main_pic" src="images/London_Big_Ben.jpg" width ="200" alt = "Big ben">
+            <h2 class="t_h2">Location: London</h2>
+            <img class= "make_small main_pic main_pt" src="images/London_Big_Ben.jpg" width ="200" alt = "Big ben">
             <h3>Geographical Location: London, United Kingdom</h3><br>
             <p>As one of the most iconic cities in the world, London carries a rich history that is matched by its continuous growth and evolution. A powerhouse of culture, politics, and finance, it stands as a city where the past and present exist harmoniously side by side. From the ancient towers that narrate tales of a regal past to modern architectural marvels that reach for the skies, London offers an unrivaled blend of history and modernity.</p><br>
-            <h3>Photo Gallery</h3>
+            <h3 class="t_h2">Photo Gallery</h3>
             <div class="travel_pic">
             <img src="images/London_British_Museum.jpg" width ="200" alt = "The London British Museum">
             <img src="images/London_City_View.jpg" width ="200" alt = "View of the London city skyline">
@@ -82,24 +102,24 @@
         </div>
 
         <div>
-            <h2>Location: New York</h2>
-            <img class= "make_small main_pic" src="images/NYC_Empire_State.jpeg" width ="200" alt = "The empire state building">
-            <h3>Geographical Location: NYC, NY, United States, North America </h3><br>
+            <h2 class="t_h2">Location: New York</h2>
+            <img class= "make_small main_pic main_pt" src="images/NYC_Empire_State.jpeg" width ="200" alt = "The empire state building">
+            <h3 class="t_h2">Geographical Location: NYC, NY, United States, North America </h3><br>
             <p>New York City thrives as a vibrant tapestry of cultures, languages, and experiences. Its streets pulse with energy, reflecting the city's boundless diversity. From the rhythmic beats of street performers in Times Square to the aroma of diverse cuisines wafting through neighborhoods, NYC's lively atmosphere encapsulates a living, breathing microcosm of the world.</p><br>
             <p>From the iconic skyline to the bustling streets, it's a place where dreams are both pursued and realized. The city's fast-paced lifestyle is balanced by its diverse communities, offering a unique blend of cultures, cuisines, and experiences around every corner. Amid the hustle and bustle, there's a sense of constant motion and an electrifying energy that makes life in the Big Apple truly extraordinary.</p><br>
-            <h3>Photo Gallery</h3>
+            <h3 class="t_h2">Photo Gallery</h3>
             <div class="travel_pic">
             <img src="images/Time_Square.jpg" width ="200" alt = "Times Square in New York">
             </div>
         </div>
 
         <div>
-            <h2>Location: Vatican, Europe</h2>
-            <img class= "make_small main_pic" src="images/Vatican_courtyard.jpg" width ="200" alt = "The vadican courtyard">
-            <h3>Geographical Location: Vatican City</h3><br>
+            <h2 class="t_h2">Location: Vatican, Europe</h2>
+            <img class= "make_small main_pic main_pt" src="images/Vatican_courtyard.jpg" width ="200" alt = "The vadican courtyard">
+            <h3 class="t_h2">Geographical Location: Vatican City</h3><br>
             <p>Vatican City, a city-state surrounded by Rome, Italy, is the spiritual and administrative focal point of the Roman Catholic Church. Home to architectural and artistic marvels, it carries a history rich with spirituality and exquisite artistry. Visitors can start their journey at the St. Peter's Square, which stands as a testament to masterful architecture and the deep-rooted history of the church.</p><br>
             <p>The Vatican boasts an array of stunning sites that captivate the eye and nourish the soul. From the iconic spiral staircase in the Vatican Museums to the breath-taking paintings in the Athenian academy, the heritage it harbors is indeed immense. Even a glimpse of the city from the waterfront offers a panoramic that encapsulates the spirit and grandeur of Vatican City, presenting an ethereal view that evokes a sense of tranquility and reverence.</p><br>
-            <h3>Photo Gallery</h3>
+            <h3 class="t_h2">Photo Gallery</h3>
             <div class="travel_pic">
             <img src="images/Vatican_Athenian_Academy.jpg" width ="200" alt = "famous painting in the vadican">
             <img src="images/Vatican_Riverside_View.jpg" width ="200" alt = "riverside view of the vadican">
